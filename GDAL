@@ -1,0 +1,35 @@
+1. Transform projection
+# use gdal.Warp() function
+'''
+# geometric correction
+vrtDir = os.path.splitext(file)[0] + '.vrt'
+subdatasets = dataset.GetSubDatasets()[0][0]
+vrtFile = gdal.Translate(vrtDir, subdatasets, format='vrt')
+# gdal.Translate:  convert sundataset into VRT file (虚拟栅格文件)
+# 在虚拟栅格文件中写入geolocation元数据的信息
+'''
+
+srs = osr.SpatialReference()
+srs.ImportFromProj4('XXXXXXXXXXX')
+geodata = gdal.Warp(outfile, dataset, dstSRS=srs, xRes, yRes, srcNodata, dstNodata, 
+                    resampleAlg=gdal.GRA_Bilinear, outputType=gdal.GDT_Float32)
+                    
+2. Clip image
+# use gdal.Warp() but it cannot change the size of the image, only mask it
+# or use np.array_mask()
+shapefile = 'XXXXX'
+cliptiff = gdal.Warp(outfile, dataset, format='GTiff'
+                     cutlineDSName=shapefile, 
+                     cutlineWhere="FIELD='whatever'",    # optionally you can filter your cutline (shapefile) based on attribute values
+                     dstNodata)
+                     
+
+3. VRT file
+用一个xml描述对一个或一组栅格的处理（投影、mosiac、各种计算），生成一个.vrt文件，
+这样并没有真的进行计算，也没有存储文件，只有当要使用vrt的时候这些操作才会进行。
+
+
+
+
+
+
