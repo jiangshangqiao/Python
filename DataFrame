@@ -1,0 +1,10 @@
+1. delete the rows or columns that are all NaN
+df.dropna(axis=0, how='all/any')
+
+
+
+
+
+
+
+
