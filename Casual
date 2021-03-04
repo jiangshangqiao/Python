@@ -1,5 +1,8 @@
 1. 按位非  ~
    逻辑非  not
+2. list排序
+l = sorted(list1)
+l = list1.sort(reverse=True)  反向排序，或正向排序
 
 
 
