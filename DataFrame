@@ -2,8 +2,10 @@
 df.dropna(axis=0, how='all/any')
 
 2. conver the number into strings
-
 df.astype('str')
+
+3. calculate by group (>= two categories)
+df[0].groupby([df[1], df[2]]).sum()
 
 
 
