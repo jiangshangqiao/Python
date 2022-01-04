@@ -3,7 +3,24 @@
 2. list排序
 l = sorted(list1)
 l = list1.sort(reverse=True)  反向排序，或正向排序
-
-
+3. 程序跳过异常继续处理
+   Method 1: if... else....
+   Method 2: try:
+                command1   #可能会出现异常的一段代码
+                command2   #如果try里的任意一个代码出现异常，直接跳转到except，程序继续运行
+             except
+                command3
+                command4
+    Method 3: for fn in files:      #使用语句继续执行
+                  try:
+                     data = pd.read_csv(fn)
+                  except OSError:
+                     pass 
+                  continue
+               data = pd.concat(data)
+                  
+   程序可以使用 throw 关键字显式地引发异常。           
+   在 C# 中，catch 关键字用于定义异常处理程序。           
+                   
 
 
