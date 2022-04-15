@@ -1,0 +1,24 @@
+1. 不同时间类型的转换
+(1) 字符串转datetime
+string = '2014-01-08 11:59:58'
+time1 = datetime.datetime.strptime(string,'%Y-%m-%d %H:%M:%S')
+(2) datetime转字符串
+time1_str = datetime.datetime.strftime(time1,'%Y-%m-%d %H:%M:%S')
+(3) 时间戳转时间对象
+time1 = time.localtime()
+time1_str = datetime.datetime.fromtimestamp(time1)
+
+2. 获取当前时间
+(1) 获取当前日期和时间
+now_time = datetime.datetime.now()
+(2) 获取昨天的时间
+yesterday = datetime.date.today() + datetime.timedelta(-1)
+(3) 获取一个小时后的时间
+add_hour=datetime.datetime.now()+datetime.timedelta(hours=1) 
+
+
+
+
+
+
+
