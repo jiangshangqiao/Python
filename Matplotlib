@@ -9,5 +9,9 @@ for i in range(len(labels)):
 
 
 
-
+2. 改变双坐标轴中画线的顺序
+ax轴的线在ax1轴的上面
+ax = fig.add_subplot()
+ax1 = ax.twinx()
+ax.set_zorder(ax.get_zorder()+1) 
 
