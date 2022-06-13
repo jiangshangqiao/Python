@@ -1,0 +1,13 @@
+1. boxplot
+(1) 改变每个箱图的颜色
+box = ax.boxplot(, labels=labels,)
+for i in range(len(labels)):
+    plt.setp(box['boxes'][i], facecolor=color[i])
+    plt.setp(box['caps'], ls='--', dashes=dashes)
+
+
+
+
+
+
+
