@@ -21,3 +21,9 @@ M1: fig.tight_layout()
 M2: plt.subplots(constrained_layout=True)
 M3: plt.subplots_adjust(bottom=0.15)
 M4: plt.savefig(title, dpi=300, bbox_inches='tight')
+
+
+
+
+
+
