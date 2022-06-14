@@ -16,3 +16,8 @@ ax1 = ax.twinx()
 ax.set_zorder(ax.get_zorder()+1) 
 ax.patch.set_visible(False) 
 
+3. 图片输出不全
+M1: fig.tight_layout()
+M2: plt.subplots(constrained_layout=True)
+M3: plt.subplots_adjust(bottom=0.15)
+M4: plt.savefig(title, dpi=300, bbox_inches='tight')
