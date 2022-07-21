@@ -22,7 +22,10 @@ l = list1.sort(reverse=True)  反向排序，或正向排序
    程序可以使用 throw 关键字显式地引发异常。           
    在 C# 中，catch 关键字用于定义异常处理程序。           
                    
-
+4. 数字数组编程字符串
+arr = np.arange(2000,2019)
+M1: str1 = ''.join(str(i) for i in arr)
+M2: str1 = [str(i) for i in arr]
 
 
 
