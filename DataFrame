@@ -7,8 +7,17 @@ df.astype('str')
 3. calculate by group (>= two categories)
 df[0].groupby([df[1], df[2]]).sum()
 
-
-
+4. 查看dataframe数据类型
+df_obj.dtypes #查看各行的数据格式
+df_obj['列名'].astype(int)#转换某列的数据类型
+df_obj.head() #查看前几行的数据,默认前5行
+df_obj.tail() #查看后几行的数据,默认后5行
+df_obj.index #查看索引
+df_obj.columns #查看列名
+df_obj.values #查看数据值
+df_obj.describe() #描述性统计
+df_obj.T #转置
+df_obj.sort_values(by=['',''])#转置
 
 
 
