@@ -1,11 +1,11 @@
 1. 数组中数据重复
-e.g. NC重复8次
-np.repeat('NC', 8, axis=0)
+1) np.repeat('NC', 3, axis=0) 数据连续重复
+e.g. NC重复3次 np.repeat('NC', 3, axis=0)
+=> ['NC', 'NC', 'NC']
 
-
-
-
-
+2) np.tile() 分块重复
+e.g. [8, 9]重复3次 np.repeat([8,9], [3,1])
+=> [[8,9], [8,9], [8,9]]
 
 
 
