@@ -27,8 +27,8 @@ arr = np.arange(2000,2019)
 M1: str1 = ''.join(str(i) for i in arr)
 M2: str1 = [str(i) for i in arr]
 
-
-
+5. 列表表达式
+[expression for i in iterable if condition] 
 
 
 
