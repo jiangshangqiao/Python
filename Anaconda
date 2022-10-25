@@ -6,7 +6,7 @@ the link of installation: https://anaconda.org/conda-forge/gdal
 4) 使用whl
 pip install whl文件的路径\whl文件名
 
-
+2. pip list 查看安装的包
 
 
 
