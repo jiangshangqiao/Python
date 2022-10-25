@@ -2,7 +2,9 @@
 1) conda install gdal 有时候不行，因为 At the time of writing, GDAL is not available from the main install channel
 2) conda install -c conda-forge gdal
 the link of installation: https://anaconda.org/conda-forge/gdal 
-
+3) conda create -n pygdal38 python=3.8
+4) 使用whl
+pip install whl文件的路径\whl文件名
 
 
 
