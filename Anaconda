@@ -8,12 +8,34 @@ pip install whl文件的路径\whl文件名
 
 2. pip list 查看安装的包
 3. 安装包的时候会有don't have the permission时候，此时用run as administrator打开
+4. conda常用指令
+conda -v 查看conda版本
+conda list 查看有哪些包
+conda env list 查看存在哪些虚拟环境
+conda update conda 更新当前conda
 
 
-
-
-
-
+5. 创建、删除和复制环境
+conda info -e 查看存在哪些虚拟环境
+1) 创建虚拟环境
+conda create -n your_env_name (要创建的虚拟环境的名字) python=3.9
+conda install -n your_env_name package_name
+2) 激活虚拟环境
+activate your_env_name
+deactivate your_env_name  #退出当前环境
+3) 删除虚拟环境
+conda remove -n your_env_name -all
+conda remove --name your_env_name package_name  #删除某个包
+4) 复制虚拟环境
+i. 本机上进行环境复制
+conda create -n new_env_name --clone old_env_name 
+ii. 复制到其他机器上
+11. 导出环境
+conda env export > ~/env.yaml 或者 conda env export > environment.yaml
+导出的是yaml格式文件，该文件记录了环境名，软件源地址及安装包列表
+22. 使用yaml配置文件创建新环境
+conda env create -f ~/env.yaml 或者 conda env create -f environment.yaml
+在新机器上执行上述命令，生成的环境与赋值源完全一样(包括环境名)
 
 
 
