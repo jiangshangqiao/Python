@@ -1,3 +1,4 @@
 1.Spyder同时运行多个进程窗口
-spyder的快捷键-属性-快捷方式-目标: 添加一个--new-instance
+1) spyder的快捷键-属性-快捷方式-目标: 添加一个--new-instance
 e.g. D:\ProgramData\Anaconda3\Scripts\spyder-script.py --new-instance
+2) 打开Anaconda Prompt，输入spyder --new-instance
