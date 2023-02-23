@@ -30,5 +30,19 @@ M2: str1 = [str(i) for i in arr]
 5. 列表表达式
 [expression for i in iterable if condition] 
 
+6. 求反函数
+M1: For the inverse function of gamma, lognormal distribution, etc., we can use the "ppf" (that comes from the package "scipy.stats", e.g., Scipy.stats.gamma.ppf).
+M2: for customized function, we can use "inversefunc" (that comes from the package "pynverse".)
+e.g., from pynverse import inversefunc
+f = lambda: x: x+3
+x_inver = inversefunc(f, y_values=27)
+
+
+
+
+
+
+
+
 
 
