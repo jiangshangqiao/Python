@@ -37,7 +37,8 @@ e.g., from pynverse import inversefunc
 f = lambda: x: x+3
 x_inver = inversefunc(f, y_values=27)
 
-
+7. 查看variable类型
+type(variable)
 
 
 
