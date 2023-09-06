@@ -1,0 +1,11 @@
+1. change JupyterLab start-up directory
+(1) open "cmd" or "Anaconda Prompt" and run "jupyter notebook --generate-config" 
+(2) This writes a file to "C:\Users\usename\.jupyter\jupyter_notebook_config.py".
+(3) open this file and search for "#c.NotebookApp.notebook_dir = ''"
+(4) replace by "c.NotebookApp.notebook_dir = 'the folder you want'"
+(https://stackoverflow.com/questions/35254852/how-to-change-the-jupyter-start-up-folder)
+
+
+
+
+
